@@ -2,7 +2,7 @@
 
 A powerful, all-in-one financial dashboard designed to help users make smarter money decisions. This responsive web application provides instant calculations for tax, loans, savings, and investments, complete with visual charts and downloadable reports.
 
-**🔴 [Live Demo](https://yourusername.github.io/repository-name/)** *(Click the link above to test the application)*
+**🔴 [Live Demo](https://github.com/MADHUSUDAN-DAS/financial-calculator)** *(Click the link above to test the application)*
 
 ---
 
@@ -50,7 +50,8 @@ This suite includes four specialized calculators in a Single Page Application (S
 ## 📸 Screenshots
 
 ### Dashboard UI
-![Dashboard Screenshot](https://via.placeholder.com/800x400?text=Upload+Your+Screenshot+Here)
+![Dashboard Screenshot](https://github.com/MADHUSUDAN-DAS/financial-calculator/blob/main/Finalcial_Calculator.png?raw=true
+)
 
 *Note: Replace the link above with your actual screenshot after uploading it to your repo.*
 
@@ -60,7 +61,7 @@ This suite includes four specialized calculators in a Single Page Application (S
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/financial-calculator.git](https://github.com/yourusername/financial-calculator.git)
+    git clone [https://github.com/MADHUSUDAN-DAS/financial-calculator.git](https://github.com/MADHUSUDAN-DAS/financial-calculator.git)
     ```
 2.  **Navigate to the project folder:**
     ```bash
