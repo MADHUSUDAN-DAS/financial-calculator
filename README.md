@@ -2,7 +2,7 @@
 
 A powerful, all-in-one financial dashboard designed to help users make smarter money decisions. This responsive web application provides instant calculations for tax, loans, savings, and investments, complete with visual charts and downloadable reports.
 
-**🔴 [Live Demo](https://github.com/MADHUSUDAN-DAS/financial-calculator)** *(Click the link above to test the application)*
+**🔴 [Live Demo](https://madhusudan-das.github.io/financial-calculator/)** | **📂 [View Source Code](https://github.com/MADHUSUDAN-DAS/financial-calculator)** *(Click the link above to test the application)*
 
 ---
 
