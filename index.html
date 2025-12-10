@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+    <header>
+        <h1>Financial Suite</h1>
+        <p>All-in-one calculator for your finances</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-link active" onclick="openCalc(event, 'CapitalGains')">Capital Gains</button>
+        <button class="tab-link" onclick="openCalc(event, 'EMI')">EMI Loan</button>
+        <button class="tab-link" onclick="openCalc(event, 'FD')">Fixed Deposit</button>
+        <button class="tab-link" onclick="openCalc(event, 'RealEstate')">Real Estate</button>
+    </div>
+
+    <div id="CapitalGains" class="tab-content" style="display: block;">
+        <h2>Capital Gains Tax</h2>
+        <div class="form-group">
+            <label>Buy Price ($)</label>
+            <input type="number" id="cg-buy" placeholder="Enter buy price">
+        </div>
+        <div class="form-group">
+            <label>Sell Price ($)</label>
+            <input type="number" id="cg-sell" placeholder="Enter sell price">
+        </div>
+        <div class="form-group">
+            <label>Tax Rate (%)</label>
+            <input type="number" id="cg-rate" placeholder="e.g. 15">
+        </div>
+        <button class="calc-btn" onclick="calculateCGT()">Calculate Tax</button>
+        <div class="result-box" id="cg-result"></div>
+    </div>
+
+    <div id="EMI" class="tab-content">
+        <h2>EMI Calculator</h2>
+        <div class="form-group">
+            <label>Loan Amount ($)</label>
+            <input type="number" id="emi-amount" placeholder="Enter loan amount">
+        </div>
+        <div class="form-group">
+            <label>Interest Rate (% per year)</label>
+            <input type="number" id="emi-rate" placeholder="e.g. 8.5">
+        </div>
+        <div class="form-group">
+            <label>Tenure (Years)</label>
+            <input type="number" id="emi-years" placeholder="e.g. 20">
+        </div>
+        <button class="calc-btn" onclick="calculateEMI()">Calculate EMI</button>
+        
+        <div class="result-box" id="emi-result"></div>
+        <div class="chart-container" id="emi-chart-wrapper" style="display:none; margin-top: 20px;">
+            <canvas id="emiChart"></canvas>
+        </div>
+    </div>
+
+    <div id="FD" class="tab-content">
+        <h2>Fixed Deposit Returns</h2>
+        <div class="form-group">
+            <label>Principal Amount ($)</label>
+            <input type="number" id="fd-principal" placeholder="Enter deposit amount">
+        </div>
+        <div class="form-group">
+            <label>Interest Rate (%)</label>
+            <input type="number" id="fd-rate" placeholder="e.g. 6.0">
+        </div>
+        <div class="form-group">
+            <label>Duration (Years)</label>
+            <input type="number" id="fd-time" placeholder="e.g. 5">
+        </div>
+        <button class="calc-btn" onclick="calculateFD()">Calculate Maturity</button>
+        <div class="result-box" id="fd-result"></div>
+    </div>
+
+    <div id="RealEstate" class="tab-content">
+        <h2>Real Estate ROI (5 Years)</h2>
+        <div class="form-group">
+            <label>Property Price ($)</label>
+            <input type="number" id="re-price" placeholder="Purchase price">
+        </div>
+        <div class="form-group">
+            <label>Monthly Rental Income ($)</label>
+            <input type="number" id="re-rent" placeholder="Monthly rent">
+        </div>
+        <div class="form-group">
+            <label>Annual Appreciation (%)</label>
+            <input type="number" id="re-appr" placeholder="e.g. 4.5">
+        </div>
+        <button class="calc-btn" onclick="calculateRE()">Calculate ROI</button>
+        <div class="result-box" id="re-result"></div>
+    </div>
+
+    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+    <button class="calc-btn" style="background-color: #e67e22;" onclick="downloadPDF()">📄 Download PDF Report</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
